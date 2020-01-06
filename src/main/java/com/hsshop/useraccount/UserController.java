@@ -25,11 +25,13 @@ public class UserController {
 
 	@RequestMapping("/")
 	public ModelAndView mainHome() throws ResourceNotFoundException {
+		System.out.println("main page called");
 		ModelAndView mv = new ModelAndView("/MainHome");
 		return mv;
 	}
 
 	@RequestMapping("/login")
+	
 	public ModelAndView login() {
 		ModelAndView mv = new ModelAndView("/Login");
 		return mv;
